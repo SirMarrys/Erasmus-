@@ -1,0 +1,450 @@
+@import url('https://fonts.googleapis.com/css2?family=Arsenal&family=League+Gothic&family=Quantico&display=swap');
+.arsenal-regular {
+  font-family: "Arsenal", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.quantico-regular {
+  font-family: "Quantico", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.league-gothic {
+  font-family: "League Gothic", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Quantico",Arial, sans-serif;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "League Gothic", Arial, sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "width" 100;
+}
+
+h3{
+  font-size: 1.55em;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #c57373;
+}
+
+.logo {
+  margin-left: 20px;
+}
+
+.logo img {
+  width: 150px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 50px;
+}
+
+.menu-button {
+  cursor: pointer;
+  font-size: 50px;
+}
+
+.side-menu {
+  position: fixed;
+  top: 0;
+  right: -300px; /* Hide the menu off-screen */
+  width: 300px;
+  height: 100%;
+  background-color: #c57373;
+  transition: right 0.3s ease-in-out;
+  z-index: 1000;
+}
+
+.side-menu.open {
+  right: 0;
+}
+
+.side-menu nav {
+  padding: 20px;
+}
+
+.menu-button-centered {
+  text-align: right;
+  font-size: 36px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.side-menu-logo {
+  display: block;
+  margin: 0 auto 20px;
+  width: 250px;
+}
+
+.divider {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 20px 0;
+}
+
+.side-menu ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.side-menu ul li {
+  margin-bottom: 10px;
+}
+
+.side-menu ul li a {
+  text-decoration: none;
+  color: #333;
+  font-family: "Arsenal", Arial, sans-serif;
+  font-size: 1.5em;
+}
+
+main {
+  padding: 20px;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.upper-section {
+  flex: 2;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  position: relative;
+  overflow: hidden;
+}
+
+.text-section {
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  z-index: 1;
+}
+.text-section p {
+  font-family: "Quantico", Arial, sans-serif;
+  font-size: 1.5em;
+  padding: 10px;
+}
+
+.image-section {
+  grid-column: 2 / 3;
+  grid-row: 1 / 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  padding: 20px;
+  overflow: hidden;
+  position: relative;
+}
+
+.image-section img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+.image-container {
+  width: 90%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.upper-section::before,
+.upper-section::after {
+  content: '';
+  position: absolute;
+  background-color: #000;
+  z-index: 2;
+}
+
+.upper-section::before {
+  top: -50%;
+  left: 50%;
+  width: 1px;
+  height: 200%;
+  transform: rotate(45deg);
+}
+
+.upper-section::after {
+  bottom: -50%;
+  right: 50%;
+  width: 1px;
+  height: 200%;
+  transform: rotate(45deg);
+}
+
+.lower-section {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.category-column {
+  background-color: #f0f0f0;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.3s ease;
+}
+
+.category-column:hover {
+  transform: scale(1.05);
+}
+
+.category-content {
+  position: relative;
+  z-index: 1;
+}
+
+.category-column::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+}
+
+.category-column h2 {
+  font-size: 24px;
+  margin: 0;
+  font-family: "League Gothic", Arial, sans-serif;
+}
+
+.recommended {
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+}
+
+.recommended h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.flip-helper {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #666;
+  font-style: italic;
+}
+
+.flip-card-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 400px;
+  perspective: 1000px;
+  margin: 20px;
+  cursor: pointer;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card.flipped .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.flip-card-front {
+  background-color: #fff;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #f39d9d;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.flip-card-front img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.flip-card-front h3, .flip-card-back h3 {
+  margin-bottom: 10px;
+  font-family: "League Gothic", Arial, sans-serif;
+}
+
+.flip-card-front .price {
+  font-weight: bold;
+  color: #2980b9;
+}
+
+.flip-card-back p {
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.buy-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #2980b9;
+  color: white;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.buy-button:hover {
+  background-color: #3498db;
+}
+
+.flip-icon {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 24px;
+  color: #666;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 40px 0 20px;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-section {
+  flex: 1;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  min-width: 200px;
+}
+
+.footer-section h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #fff;
+  padding-bottom: 5px;
+  font-family: "League Gothic", Arial, sans-serif;
+}
+
+.footer-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+  text-decoration: underline;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.social-icon img {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s ease;
+}
+
+.social-icon:hover img {
+  transform: scale(1.1);
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #555;
+}
