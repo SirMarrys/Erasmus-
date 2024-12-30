@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
   colorButtons.forEach(button => {
     button.addEventListener('click', function() {
       const color = this.getAttribute('data-color');
-      productImage.src = `../img/boseUltraOpen_${color}.png`;
+      productImage.src = `../../img/jabraElite8_${color}.png`;
     });
   });
 

@@ -1,3 +1,8 @@
+a {
+  text-decoration: none;
+  color: #000;
+}
+
 .product-detail {
   display: flex;
   justify-content: center;
@@ -46,6 +51,12 @@
   text-align: center;
 }
 
+.price {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 10px;
+}
+
 .color-options {
   display: flex;
   gap: 10px;
@@ -70,12 +81,12 @@
 }
 
 .color-btn:focus {
-  outline: 2px solid #2980b9;
+  outline: 2px solid #67945e;
 }
 
 .add-to-cart {
   padding: 10px 20px;
-  background-color: #2980b9;
+  background-color: #67945e;
   color: white;
   border: none;
   cursor: pointer;

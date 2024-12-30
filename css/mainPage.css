@@ -346,7 +346,7 @@ main {
 
 .flip-card-front .price {
   font-weight: bold;
-  color: #2980b9;
+  color: #2e811d;
 }
 
 .flip-card-back p {
@@ -358,7 +358,7 @@ main {
 .buy-button {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #2980b9;
+  background-color: #67945e;
   color: white;
   text-decoration: none;
   border: none;
@@ -369,7 +369,7 @@ main {
 }
 
 .buy-button:hover {
-  background-color: #3498db;
+  background-color: #83c574;
 }
 
 .flip-icon {
