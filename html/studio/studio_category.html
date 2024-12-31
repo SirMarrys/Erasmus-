@@ -16,6 +16,10 @@
     </div>
     <h1>AUDIOAURA │ STUDIO CATEGORY</h1>
     <div class="menu-button" id="menuButton">☰</div>
+    <div class="cart-icon">
+      <i class="fas fa-shopping-cart"></i>
+      <span id="cartCount">0</span>
+    </div>
   
   <div class="side-menu" id="sideMenu">
     <nav>
@@ -33,59 +37,49 @@
 
   <main>
     <div class="product-grid">
-      <div class="product-card">
-        <div class="product-image">
-          <img src="../../img/ath_black.png" alt="audio-technica ATH-M50x - Black" class="product-img">
-          <img src="../../img/ath_white.png" alt="audio-technica ATH-M50x - White" class="product-img hidden">
-          <img src="../../img/ath_orange.png" alt="audio-technica ATH-M50x - Orange" class="product-img hidden">
-          <img src="../../img/ath_cyan.png" alt="audio-technica ATH-M50x - Cyan" class="product-img hidden">
-          <div class="hover-overlay">
-            <a href="audio_technica.html" class="magnify-icon">
-              <i class="fas fa-search"></i>
-            </a>
+      <a href="audio_technica.html" class="product-link">
+        <div class="product-card">
+          <div class="product-image">
+            <img src="../../img/ath_black.png" alt="audio-technica ATH-M50x - Black" class="product-img">
+            <img src="../../img/ath_white.png" alt="audio-technica ATH-M50x - White" class="product-img hidden">
+            <img src="../../img/ath_orange.png" alt="audio-technica ATH-M50x - Orange" class="product-img hidden">
+            <img src="../../img/ath_cyan.png" alt="audio-technica ATH-M50x - Cyan" class="product-img hidden">
           </div>
+          <h2>audio-technica ATH-M50x</h2>
+          <p class="price">$179.99</p>
         </div>
-        <h2>audio-technica ATH-M50x</h2>
-        <p class="price">$179.99</p>
-      </div>
-      <div class="product-card">
-        <div class="product-image">
-          <img src="../../img/sennheiserHD_black.png" alt="Sennheiser HD 490 PRO - Black" class="product-img">
-          <div class="hover-overlay">
-            <a href="sennheiser_hd.html" class="magnify-icon">
-              <i class="fas fa-search"></i>
-            </a>
+      </a>
+  
+      <a href="sennheiser_hd.html" class="product-link">
+        <div class="product-card">
+          <div class="product-image">
+            <img src="../../img/sennheiserHD_black.png" alt="Sennheiser HD 490 PRO - Black" class="product-img">
           </div>
+          <h2>Sennheiser HD 490 PRO</h2>
+          <p class="price">$399.99</p>
         </div>
-        <h2>Sennheiser HD 490 PRO</h2>
-        <p class="price">$399.99</p>
-      </div>
-      <div class="product-card">
-        <div class="product-image">
-          <img src="../../img/rode_black.png" alt="RØDE NTH-100 - Black" class="product-img">
-          <img src="../../img/rode_white.png" alt="RØDE NTH-100 - White" class="product-img hidden">
-          <div class="hover-overlay">
-            <a href="rode.html" class="magnify-icon">
-              <i class="fas fa-search"></i>
-            </a>
+      </a>
+  
+      <a href="rode.html" class="product-link">
+        <div class="product-card">
+          <div class="product-image">
+            <img src="../../img/rode_black.png" alt="RØDE NTH-100 - Black" class="product-img">
+            <img src="../../img/rode_white.png" alt="RØDE NTH-100 - White" class="product-img hidden">
           </div>
+          <h2>RØDE NTH-100</h2>
+          <p class="price">$149.00</p>
         </div>
-        <h2>RØDE NTH-100</h2>
-        <p class="price">$149.00</p>
-      </div>
+      </a>
       
-      <div class="product-card">
-        <div class="product-image">
-          <img src="../../img/beyerDT_black.png" alt="beyerdynamic DT 1990 PRO MKI - Black" class="product-img">
-          <div class="hover-overlay">
-            <a href="beyerDT.html" class="magnify-icon">
-              <i class="fas fa-search"></i>
-            </a>
+      <a href="beyerDT.html" class="product-link">
+        <div class="product-card">
+          <div class="product-image">
+            <img src="../../img/beyerDT_black.png" alt="beyerdynamic DT 1990 PRO MKI - Black" class="product-img">
           </div>
+          <h2>beyerdynamic DT 1990 PRO MKI</h2>
+          <p class="price">$479.99</p>
         </div>
-        <h2>beyerdynamic DT 1990 PRO MKI</h2>
-        <p class="price">$479.99</p>
-      </div>
+      </a>
     </div>    
   </main>
   
@@ -102,6 +96,7 @@
           <li><a href="#products">Products</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#contact">Contact</a></li>
+          <button id="resetCartButton" class="reset-button">Reset Cart</button>
         </ul>
       </div>
       <div class="footer-section">

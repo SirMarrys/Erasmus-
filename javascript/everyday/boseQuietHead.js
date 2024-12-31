@@ -1,32 +1,34 @@
 document.addEventListener('DOMContentLoaded', function() {
-  const productImage = document.getElementById('productImage');
   const colorButtons = document.querySelectorAll('.color-btn');
+  const productImage = document.getElementById('productImage');
   const addToCartBtn = document.getElementById('addToCartBtn');
-  const cartPopup = document.getElementById('cartPopup');
-  const closePopup = document.getElementById('closePopup');
+  const popup = document.getElementById('addToCartPopup');
+  const closePopupBtn = document.getElementById('closePopup');
+  const cartIcon = document.querySelector('.cart-icon');
+  const cartCount = document.getElementById('cartCount');
 
+  // Initialize cart count from localStorage
+  let count = parseInt(localStorage.getItem('cartCount')) || 0;
+
+  function updateCartCount() {
+    cartCount.textContent = count;
+    localStorage.setItem('cartCount', count.toString());
+  }
+
+  // Color switching functionality
   colorButtons.forEach(button => {
     button.addEventListener('click', function() {
+      colorButtons.forEach(btn => btn.classList.remove('selected'));
+      this.classList.add('selected');
       const color = this.getAttribute('data-color');
       productImage.src = `../../img/boseQuietHead_${color}.png`;
     });
   });
 
+  // Add to cart functionality
   addToCartBtn.addEventListener('click', function() {
-    cartPopup.style.display = 'block';
-  });
-
-  closePopup.addEventListener('click', function() {
-    cartPopup.style.display = 'none';
-  });
-});
-
-document.addEventListener('DOMContentLoaded', function() {
-  const addToCartBtn = document.getElementById('addToCartBtn');
-  const popup = document.getElementById('addToCartPopup');
-  const closePopupBtn = document.getElementById('closePopup');
-
-  addToCartBtn.addEventListener('click', function() {
+    count++;
+    updateCartCount();
     popup.style.display = 'block';
   });
 
@@ -40,4 +42,7 @@ document.addEventListener('DOMContentLoaded', function() {
       popup.style.display = 'none';
     }
   });
+
+  // Initialize cart count display
+  updateCartCount();
 });

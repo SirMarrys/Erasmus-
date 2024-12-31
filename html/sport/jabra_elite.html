@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../../css/mainPage.css">
   <link rel="stylesheet" href="../../css/products.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link rel="icon" type="image/x-icon" href="../../img/logo.png">
   <title>Jabra Elite 8 Active Gen 2</title>
 </head>
@@ -15,6 +16,10 @@
     </div>
     <h1>AUDIOAURA │ <a href="sport_category.html">SPORT CATEGORY</a></h1>
     <div class="menu-button" id="menuButton">☰</div>
+    <div class="cart-icon">
+      <i class="fas fa-shopping-cart"></i>
+      <span id="cartCount">0</span>
+    </div>
   
   <div class="side-menu" id="sideMenu">
     <nav>
@@ -56,7 +61,7 @@
       </div>
       <p class="price">$200.00</p>
       <div class="color-options">
-        <button class="color-btn" data-color="coral">
+        <button class="color-btn selected" data-color="coral">
           <img src="../../img/jabraElite8_coral.png" alt="Jabra Elite 8 Active Gen 2 - Coral">
         </button>
         <button class="color-btn" data-color="black">
@@ -94,6 +99,7 @@
           <li><a href="#products">Products</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#contact">Contact</a></li>
+          <button id="resetCartButton" class="reset-button">Reset Cart</button>
         </ul>
       </div>
       <div class="footer-section">

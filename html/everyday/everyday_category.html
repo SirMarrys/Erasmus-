@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AUDIOAURA │ Everyday Category</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <link rel="stylesheet" href="../../css/category.css">
   <link rel="stylesheet" href="../../css/mainPage.css">
   <link rel="icon" type="image/x-icon" href="../../img/logo.png">
@@ -16,6 +16,10 @@
     </div>
     <h1>AUDIOAURA │ EVERYDAY CATEGORY</h1>
     <div class="menu-button" id="menuButton">☰</div>
+    <div class="cart-icon">
+      <i class="fas fa-shopping-cart"></i>
+      <span id="cartCount">0</span>
+    </div>
   
   <div class="side-menu" id="sideMenu">
     <nav>
@@ -33,63 +37,53 @@
 
   <main>
     <div class="product-grid">
-      <div class="product-card">
-        <div class="product-image">
-          <img src="../../img/momentum_black.png" alt="Sennheiser MOMENTUM 4 Wireless - Black" class="product-img">
-          <img src="../../img/momentum_gray.png" alt="Sennheiser MOMENTUM 4 Wireless - Gray" class="product-img hidden">
-          <img src="../../img/momentum_white.png" alt="Sennheiser MOMENTUM 4 Wireless - White" class="product-img hidden">
-          <img src="../../img/momentum_blue.png" alt="Sennheiser MOMENTUM 4 Wireless - Blue" class="product-img hidden">
-          <div class="hover-overlay">
-            <a href="sennheiser_momentum.html" class="magnify-icon">
-              <i class="fas fa-search"></i>
-            </a>
+      <a href="sennheiser_momentum.html" class="product-link">
+        <div class="product-card">
+          <div class="product-image">
+            <img src="../../img/momentum_black.png" alt="Sennheiser MOMENTUM 4 Wireless - Black" class="product-img">
+            <img src="../../img/momentum_gray.png" alt="Sennheiser MOMENTUM 4 Wireless - Gray" class="product-img hidden">
+            <img src="../../img/momentum_white.png" alt="Sennheiser MOMENTUM 4 Wireless - White" class="product-img hidden">
+            <img src="../../img/momentum_blue.png" alt="Sennheiser MOMENTUM 4 Wireless - Blue" class="product-img hidden">
           </div>
+          <h2>Sennheiser MOMENTUM 4 Wireless</h2>
+          <p class="price">$400.00</p>
         </div>
-        <h2>Sennheiser MOMENTUM 4 Wireless</h2>
-        <p class="price">$400.00</p>
-      </div>
-      <div class="product-card">
-        <div class="product-image">
-          <img src="../../img/sonyWF_black.png" alt="Sony WF-1000XM5 - Black" class="product-img">
-          <img src="../../img/sonyWF_pink.png" alt="Sony WF-1000XM5 - Pink" class="product-img hidden">
-          <img src="../../img/sonyWF_white.png" alt="Sony WF-1000XM5 - White" class="product-img hidden">
-          <div class="hover-overlay">
-            <a href="sonyWF.html" class="magnify-icon">
-              <i class="fas fa-search"></i>
-            </a>
-          </div>
-        </div>
-        <h2>Sony WF-1000XM5</h2>
-        <p class="price">$235.99</p>
-      </div>
-      <div class="product-card">
-        <div class="product-image">
-          <img src="../../img/boseQuietHead_black.png" alt="Bose QuietComfort Ultra Headphones - Black" class="product-img">
-          <img src="../../img/boseQuietHead_sandstone.png" alt="Bose QuietComfort Ultra Headphones - Sandstone" class="product-img hidden">
-          <img src="../../img/boseQuietHead_white.png" alt="Bose QuietComfort Ultra Headphones - White" class="product-img hidden">
-          <img src="../../img/boseQuietHead_blue.png" alt="Bose QuietComfort Ultra Headphones - Blue" class="product-img hidden">
-          <div class="hover-overlay">
-            <a href="boseQuietHead.html" class="magnify-icon">
-              <i class="fas fa-search"></i>
-            </a>
-          </div>
-        </div>
-        <h2>Bose QuietComfort Ultra Headphones</h2>
-        <p class="price">$419.99</p>
-      </div>
+      </a>
       
-      <div class="product-card">
-        <div class="product-image">
-          <img src="../../img/airpods_pro2.png" alt="Apple Airpods Pro 2 - White" class="product-img">
-          <div class="hover-overlay">
-            <a href="airpods_pro2.html" class="magnify-icon">
-              <i class="fas fa-search"></i>
-            </a>
+      <a href="sonyWF.html" class="product-link">
+        <div class="product-card">
+          <div class="product-image">
+            <img src="../../img/sonyWF_black.png" alt="Sony WF-1000XM5 - Black" class="product-img">
+            <img src="../../img/sonyWF_pink.png" alt="Sony WF-1000XM5 - Pink" class="product-img hidden">
+            <img src="../../img/sonyWF_white.png" alt="Sony WF-1000XM5 - White" class="product-img hidden">
           </div>
+          <h2>Sony WF-1000XM5</h2>
+          <p class="price">$235.99</p>
         </div>
-        <h2>Apple Airpods Pro 2</h2>
-        <p class="price">$280.00</p>
-      </div>
+      </a>
+      
+      <a href="boseQuietHead.html" class="product-link">
+        <div class="product-card">
+          <div class="product-image">
+            <img src="../../img/boseQuietHead_black.png" alt="Bose QuietComfort Ultra Headphones - Black" class="product-img">
+            <img src="../../img/boseQuietHead_sandstone.png" alt="Bose QuietComfort Ultra Headphones - Sandstone" class="product-img hidden">
+            <img src="../../img/boseQuietHead_white.png" alt="Bose QuietComfort Ultra Headphones - White" class="product-img hidden">
+            <img src="../../img/boseQuietHead_blue.png" alt="Bose QuietComfort Ultra Headphones - Blue" class="product-img hidden">
+          </div>
+          <h2>Bose QuietComfort Ultra Headphones</h2>
+          <p class="price">$419.99</p>
+        </div>
+      </a>
+      
+      <a href="airpods_pro2.html" class="product-link">
+        <div class="product-card">
+          <div class="product-image">
+            <img src="../../img/airpods_pro2.png" alt="Apple Airpods Pro 2 - White" class="product-img">
+          </div>
+          <h2>Apple Airpods Pro 2</h2>
+          <p class="price">$280.00</p>
+        </div>
+      </a>
     </div>    
   </main>
   
@@ -106,6 +100,7 @@
           <li><a href="#products">Products</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#contact">Contact</a></li>
+          <button id="resetCartButton" class="reset-button">Reset Cart</button>
         </ul>
       </div>
       <div class="footer-section">

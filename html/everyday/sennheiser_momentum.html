@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../../css/mainPage.css">
   <link rel="stylesheet" href="../../css/products.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <link rel="icon" type="image/x-icon" href="../../img/logo.png">
   <title>Sennheiser MOMENTUM 4 Wireless</title>
 </head>
@@ -15,6 +16,10 @@
     </div>
     <h1>AUDIOAURA │ <a href="everyday_category.html">EVERYDAY CATEGORY</a></h1>
     <div class="menu-button" id="menuButton">☰</div>
+    <div class="cart-icon">
+      <i class="fas fa-shopping-cart"></i>
+      <span id="cartCount">0</span>
+    </div>
   
   <div class="side-menu" id="sideMenu">
     <nav>
@@ -55,17 +60,17 @@
       </div>
       <p class="price">$400.00</p>
       <div class="color-options">
-        <button class="color-btn" data-color="white">
-          <img src="../../img/momentum_white.png" alt="White Beats Fit Pro True Wireless Earbuds">
+        <button class="color-btn selected" data-color="white">
+          <img src="../../img/momentum_white.png" alt="Sennheiser MOMENTUM 4 Wireless - White">
         </button>
         <button class="color-btn" data-color="black">
-          <img src="../../img/momentum_black.png" alt="Black Beats Fit Pro True Wireless Earbuds">
+          <img src="../../img/momentum_black.png" alt="Sennheiser MOMENTUM 4 Wireless - Black">
         </button>
         <button class="color-btn" data-color="gray">
-          <img src="../../img/momentum_gray.png" alt="Gray Beats Fit Pro True Wireless Earbuds">
+          <img src="../../img/momentum_gray.png" alt="Sennheiser MOMENTUM 4 Wireless - Gray">
         </button>
         <button class="color-btn" data-color="blue">
-          <img src="../../img/momentum_blue.png" alt="Purple Beats Fit Pro True Wireless Earbuds">
+          <img src="../../img/momentum_blue.png" alt="Sennheiser MOMENTUM 4 Wireless - Blue">
         </button>
       </div>
       <button id="addToCartBtn" class="add-to-cart">Add to Cart</button>
@@ -93,6 +98,7 @@
           <li><a href="#products">Products</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#contact">Contact</a></li>
+          <button id="resetCartButton" class="reset-button">Reset Cart</button>
         </ul>
       </div>
       <div class="footer-section">

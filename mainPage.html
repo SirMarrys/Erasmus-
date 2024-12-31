@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Arsenal&family=League+Gothic&family=Quantico&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/mainPage.css">
@@ -18,6 +19,10 @@
   </div>
   <h1>AUDIOAURA │ HEADPHONES</h1>
   <div class="menu-button" id="menuButton">☰</div>
+  <div class="cart-icon">
+    <i class="fas fa-shopping-cart"></i>
+    <span id="cartCount">0</span>
+  </div>
 
 <div class="side-menu" id="sideMenu">
   <nav>
@@ -31,6 +36,7 @@
     </ul>
   </nav>
 </div>
+
 </header>
 
 <main>
@@ -132,6 +138,7 @@
         <li><a href="#products">Products</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#contact">Contact</a></li>
+        <button id="resetCartButton" class="reset-button">Reset Cart</button>
       </ul>
     </div>
     <div class="footer-section">

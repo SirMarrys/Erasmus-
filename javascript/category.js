@@ -1,5 +1,15 @@
 document.addEventListener('DOMContentLoaded', () => {
   const productCards = document.querySelectorAll('.product-card');
+  const cartCount = document.getElementById('cartCount');
+
+  function updateCartCount() {
+    const count = localStorage.getItem('cartCount') || '0';
+    if (cartCount) {
+      cartCount.textContent = count;
+    }
+  }
+
+  updateCartCount();
 
   productCards.forEach(card => {
     const images = card.querySelectorAll('.product-image img');
