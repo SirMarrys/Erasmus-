@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
       colorButtons.forEach(btn => btn.classList.remove('selected'));
       this.classList.add('selected');
       const color = this.getAttribute('data-color');
-      productImage.src = `../../img/airpods_pro2_${color}.png`;
+      productImage.src = `../../img/airpods_pro2.png`;
     });
   });
 

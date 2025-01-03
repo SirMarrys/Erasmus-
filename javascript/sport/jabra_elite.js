@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
       colorButtons.forEach(btn => btn.classList.remove('selected'));
       this.classList.add('selected');
       const color = this.getAttribute('data-color');
-      productImage.src = `../../img/jabraElite_${color}.png`;
+      productImage.src = `../../img/jabraElite8_${color}.png`;
       productImage.alt = `Jabra Elite 8 Active - ${color.charAt(0).toUpperCase() + color.slice(1)}`;
     });
   });

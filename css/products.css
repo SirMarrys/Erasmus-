@@ -51,6 +51,11 @@ a {
   text-align: center;
 }
 
+.product-info h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
 .price {
   font-size: 24px;
   font-weight: bold;
